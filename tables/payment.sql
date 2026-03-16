@@ -1,0 +1,40 @@
+CREATE TABLE payments (
+    payment_id INT AUTO_INCREMENT,
+    claim_id INT,
+    payment_date DATE,
+    payment_amount DECIMAL(12 , 2 ),
+    payment_method VARCHAR(50),
+    payment_status VARCHAR(50),
+    CONSTRAINT pay_payment_id_pk PRIMARY KEY (payment_id),
+    CONSTRAINT pay_claim_id_pk FOREIGN KEY (claim_id)
+        REFERENCES claims (claim_id),
+    CONSTRAINT pay_payment_status_ck CHECK (payment_status IN ('processed' , 'pending', 'failed')),
+    CONSTRAINT pay_payment_amount_ck CHECK (payment_amount >= 0)
+);
+
+INSERT INTO payments (payment_id, claim_id, payment_date, payment_amount, payment_method, payment_status)
+VALUES (1,1,'2024-02-15',12000,'Bank Transfer','Processed'),
+(2,2,'2024-03-10',45000,'UPI','Processed'),
+(3,3,'2024-04-20',100000,'Cheque','Processed'),
+(4,5,'2024-05-15',50000,'Bank Transfer','Processed'),
+(5,6,'2024-06-05',200000,'Online','Processed'),
+(6,7,'2024-03-25',8000,'UPI','Processed'),
+(7,9,'2024-06-05',280000,'Bank Transfer','Processed'),
+(8,11,'2024-04-01',45000,'Cheque','Processed'),
+(9,13,'2024-04-25',150000,'Online','Processed'),
+(10,14,'2024-05-15',60000,'Bank Transfer','Processed'),
+(11,16,'2024-08-20',70000,'UPI','Processed'),
+(12,17,'2024-03-20',200000,'Cheque','Processed'),
+(13,22,'2024-04-10',65000,'Bank Transfer','Processed'),
+(14,25,'2024-03-28',90000,'Online','Processed'),
+(15,26,'2024-06-10',300000,'Bank Transfer','Processed'),
+(16,29,'2024-06-05',260000,'UPI','Processed'),
+(17,31,'2024-04-18',75000,'Cheque','Processed'),
+(18,33,'2024-06-25',140000,'Bank Transfer','Processed'),
+(19,36,'2024-05-05',190000,'Online','Processed'),
+(20,39,'2024-06-12',240000,'Bank Transfer','Processed'),
+(21,40,'2024-06-20',85000,'UPI','Pending'),
+(22,42,'2024-04-22',58000,'Cheque','Pending'),
+(23,43,'2024-05-30',200000,'Bank Transfer','Pending'),
+(24,45,'2024-06-15',160000,'Online','Pending'),
+(25,38,'2024-03-05',15000,'Bank Transfer','Failed');
