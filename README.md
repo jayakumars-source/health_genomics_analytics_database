@@ -130,7 +130,19 @@ Examples include:
 These queries demonstrate how SQL can support **healthcare data analysis and decision making**.
 
 ---
+## Key Insights
 
+- **Cancer Diagnosis Patterns:** Analysis of patient and diagnosis data helps identify the most common cancer types and how diagnoses are distributed across the patient population.
+
+- **Gene–Cancer Relationships:** The database links genes with specific cancer types, enabling exploration of potential genetic associations involved in cancer development.
+
+- **Genomic Risk Assessment:** Patients with higher genomic risk scores can be identified, helping highlight individuals who may require closer medical monitoring or preventive care.
+
+- **Insurance and Healthcare Cost Analysis:** By analyzing policies, claims, and payments, the project reveals patterns in healthcare coverage, claim amounts, and financial burden across patients.
+
+- **Healthcare Payment Insights:** Payment data analysis helps track processed, pending, and failed payments while identifying the most commonly used payment methods.
+
+---
 # Project Folder Structure
 
 ```
