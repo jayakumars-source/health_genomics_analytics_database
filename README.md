@@ -73,14 +73,6 @@ This relationship is handled through the **gene_cancer_association** junction ta
 
 ---
 
-# Database ER Diagram
-
-The following diagram shows the structure and relationships between tables.
-
-![ER Diagram](images/er_diagram.png)
-
----
-
 # Database Features
 
 This project demonstrates several relational database features.
@@ -205,24 +197,15 @@ This database model can support applications such as:
 
 ---
 
-# Future Improvements
-
-Potential improvements for this project include:
-
-- Integration of **genomic sequencing metadata**
-- Adding **treatment outcomes and survival analysis**
-- Building **data dashboards using Power BI or Tableau**
-- Performing **data analysis using Python**
-- Implementing **machine learning for genomic risk prediction**
-
----
-
 # Author
 
 **Jayakumar S**
 
 B.Tech Biotechnology Student  
 Interested in **Bioinformatics, Data Analytics, and Healthcare Data Science**
+
+GitHub: [jayakumars-source](https://github.com/jayakumars-source)  
+LinkedIn: [Jayakumar S](https://www.linkedin.com/in/jayakumarsbio05)
 
 ---
 
