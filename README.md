@@ -1,4 +1,4 @@
-# Health Genomics Analytics Database
+# Clinical Genomics Data Analysis (SQL)
 
 ## Overview
 
